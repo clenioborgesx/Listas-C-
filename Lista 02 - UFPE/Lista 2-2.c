@@ -4,7 +4,7 @@
 int quant_num (void){
 	int n;
 	do{
-	printf("informe a quantidade de numeros:");
+	printf("Informe a quantidade de numeros que deseja listar:");
 	scanf("%d",&n);
 	} while (n>DIM);
 	return (n);
@@ -12,19 +12,19 @@ int quant_num (void){
 void vetor_num (float v[],int n){
 	int i;
 	for (i=0;i<n;i++){
-		printf("\n\n informe o valor %d:",i+1);
+		printf("\n\n Informe o valor %d:",i+1);
 		scanf("%f",&v[i]);		
 	}
 }
 int esc_op (void){
 		int op;
 		printf("\n\n opcoes \n\n");
-		printf("1- impressao dos valores lidos na mesma ordem em que foram digitados;\n");
-		printf("2- impressao dos valores na ordem inversa de digitação;\n");
-		printf("3- impressao do  menor e do maior numero do vetor;\n");
-		printf("4- impressao da media dos valores e de quantos numeros estao acima da media e quantos estao abaixo da media;\n");
-		printf("5- encerrar o programa.\n\n");
-		printf("informe a opcao desejada:");
+		printf("1- Impressao dos valores lidos na mesma ordem em que foram digitados;\n");
+		printf("2- Impressao dos valores na ordem inversa de digitaï¿½ï¿½o;\n");
+		printf("3- Impressao do  menor e do maior numero do vetor;\n");
+		printf("4- Impressao da media dos valores e de quantos numeros estao acima da media e quantos estao abaixo da media;\n");
+		printf("5- Encerrar o programa.\n\n");
+		printf("Informe a opcao desejada:");
 		scanf("%d",&op);
 		return (op);
 	}
@@ -53,7 +53,7 @@ void op_3 (float v[], int n){
 			}
 		}
 	}
-	printf("o maior num e:%.2f\n\n", maior);
+	printf("O maior num eh:%.2f\n\n", maior);
 	
 	for (i=0; i<n; i++){
 		if (i==0){
@@ -65,7 +65,7 @@ void op_3 (float v[], int n){
 			}
 		}
 	}
-	printf("o menor num e:%.2f", menor);
+	printf("O menor num eh:%.2f", menor);
 }
 	void op_4 (float v[], int n){
 		int i, j=0, k=0;
@@ -83,11 +83,11 @@ void op_3 (float v[], int n){
 				k++;
 			}
 		}
-		printf("A media e: %f\n\n", media);
-		printf("%d numeros acima da media e %d numeros abaixo da media.",j, k);	
+		printf("A media eh: %f\n\n", media);
+		printf("%d Numeros acima da media e %d numeros abaixo da media.",j, k);	
 	}
 	void op_5 (void){
-		printf("programa finalizado");
+		printf("Programa Finalizado");
 	}
 	
 	void main (void){
@@ -114,7 +114,7 @@ void op_3 (float v[], int n){
 			op_5();
 			break;
 			default:
-			printf("opcao invalida");	
+			printf("Opcao invalida!");	
 		}
 	
 	}
